@@ -12,7 +12,7 @@ const Chat = () => {
   const handleAnalyzeSentiment = async () => {
     try {
       const token = localStorage.getItem('accessToken');
-      const response = await axios.post('http://localhost:3000/analyze-sentiment', { tweet }, {
+      const response = await axios.post('https://emofy-lxvt.onrender.com/analyze-sentiment', { tweet }, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -29,7 +29,7 @@ const Chat = () => {
   const handleFetchRecommendations = async () => {
     try {
       const token = localStorage.getItem('accessToken');
-      const response = await axios.post('http://localhost:3000/recommend', {}, {
+      const response = await axios.post('https://emofy-lxvt.onrender.com/recommend', {}, {
         headers: {
           Authorization: `Bearer ${token}`,
         }
