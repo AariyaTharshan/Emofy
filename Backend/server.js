@@ -29,7 +29,7 @@ const generationConfig = {
 };
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://emofy-dev.vercel.app',
   credentials: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   allowedHeaders: 'Content-Type,Authorization'
