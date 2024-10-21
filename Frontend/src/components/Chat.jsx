@@ -83,9 +83,14 @@ const Chat = () => {
       )}
 
       {emotion && (
+        <div className="mt-4">
+          <h4>Detected Emotion:</h4>
+          <p>{emotion}</p>
+
           <button className="btn btn-success mt-3" onClick={handleFetchRecommendations}>
             Get Recommendations
           </button>
+        </div>
       )}
 
       {recommendations && (
