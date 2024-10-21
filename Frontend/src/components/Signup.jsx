@@ -18,7 +18,7 @@ const Signup = () => {
         return;
       }
 
-      const response = await axios.post('http://localhost:3000/signup', { username, password });
+      const response = await axios.post('https://emofy-lxvt.onrender.com/signup', { username, password });
       console.log(response.data);
 
       if (response.status === 201) {
