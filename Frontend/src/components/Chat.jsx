@@ -86,7 +86,6 @@ const Chat = () => {
           <button className="btn btn-success mt-3" onClick={handleFetchRecommendations}>
             Get Recommendations
           </button>
-        </div>
       )}
 
       {recommendations && (
